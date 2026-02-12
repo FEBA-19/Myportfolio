@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+CU+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Animate style  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="container">
+        <!-- Nav bar -->
+        <nav>
+            <!-- Logo -->
+            <img class="logo" src="./Images/LOGO (2).png" alt="Logo">
+            <!--Links  -->
+            <ul>
+                <li class="list-items"> <a class="links" href="#home">HOME</a></li>
+                <li class="list-items"> <a class="links" href="#about">ABOUT</a></li>
+                <li class="list-items"> <a class="links" href="#skills">SKILLS</a></li>
+                <li class="list-items"> <a class="links" href="#projects">PROJECTS</a></li>
+                <li class="list-items"> <a class="links" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <!-- Home Content -->
+            <div class="home-content">
+                <h2 class="animate__animated animate__backInLeft">I am Feba Mathew</h2>
+                <p class="description">
+                    Engineer by degree and Creator by passion.
+                </p>
+                <a id="button" href="./Feba_Resume.pdf" download="">Download CV</a>
+            </div>
+            <!-- Home Image -->
+            <div class="animate__animated animate__backInRight">
+                <img id="profile" src="./Images/profile.png" alt="No Image">
+            </div>
+        </section>
+        <!-- About Section -->
+        <section data-aos="flip-left" class="about" id="about">
+
+            <div>
+                <h3>ABOUT ME</h3>
+                <P class="para">
+                    I'm Feba Mathew, an engineer by degree and a creator by passion. I enjoy turning ideas into visually
+                    appealing and user-friendly digital experiences. With a strong foundation in HTML, CSS, and modern
+                    front-end concepts, I focus on building clean, responsive, and intuitive interfaces.
+
+                    As someone who is continuously learning and evolving, I love exploring new technologies and
+                    improving my skills through hands-on projects. I believe good design is not just about how things
+                    look, but also about how smoothly they work for the user.
+
+                    I'm currently focused on strengthening my front-end development skills and working on real-world
+                    projects that challenge me creatively and technically. I value consistency, attention to detail, and
+                    clear communication in everything I build.
+
+                    When I'm not coding, I enjoy learning new design trends, experimenting with layouts, and finding
+                    inspiration in everyday digital experiences.
+                </P>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section data-aos="fade-left" class=" skills about" id="skills">
+            <img class="img" src="./Images/Skills.png" alt="About Image">
+            <h3>SKILLS</h3>
+            <div class="list">
+                <ul id="list-items">
+                    <li class="skill-name">HTML</li>
+                    <div class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <li class="skill-name">CSS</li>
+                    <div class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <li class="skill-name">C Programming</li>
+                    <div class="dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section data-aos="fade-right" class="projects about" id="projects">
+            <h3>My Projects</h3>
+            <div class="project">
+                <div class="image-container">
+                    <a class="Project-link" href="">Smart Wate Segregation Unit</a>
+                    <div class="overlay">
+                        <h3 class="proj">Smart Wate Segregation Unit <a
+                                href="https://github.com/FEBA-19/Portfoliotest423.git" target="_blank"><i
+                                    class="fa-solid fa-link brands"></i></a></h3>
+                        <P class="para">
+                            Waste segregation is a critical aspect of sustainable waste management, contributing
+                            significantly to recycling and reducing environmental pollution. Traditional waste
+                            segregation methods often rely on manual sorting, which is labor-intensive, time-consuming,
+                            and prone to errors. This project presents a Smart Waste Segregation Unit that utilizes
+                            deep learning techniques to enhance the efficiency and accuracy of waste sorting.
+                            The proposed system employs convolutional neural networks (CNNs) trained on
+                            extensive datasets comprising various waste categories. Through image recognition
+                            and classification, the CNN model identifies different types of waste items particularly
+                            metal,organic,recyclable and disposable waste with high precision. The system integrates
+                            this deep learning model into a smart sorting mechanism, capable of sorting
+                            waste items into appropriate categories automatically. A prototype of the automated
+                            waste segregation system is developed and tested.Also the prototype is incorporated
+                            with bin level detection and smell detection sensors where the bin levels can be monitored
+                            by the user using blynk app. The integration of deep learning technology into
+                            waste management systems offers a scalable and sustainable solution for efficient waste
+                            segregation, thereby contributing to a cleaner environment and promoting a circular
+                            economy.
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-container">
+                    <a class="Project-link" href="">Sanitary Napkin Incinarator</a>
+                    <div class="overlay">
+                        <h3 class="proj">Sanitary Napkin Incinarator <a
+                                href="https://github.com/FEBA-19/Portfoliotest423.git" target="_blank"><i
+                                    class="fa-solid fa-link brands"></i></a></h3>
+                        <P class="para">
+                            Improper disposal of the sanitary pad can lead to various problems which include large
+                            heaps of pads all over, bacteria causing infection, unhygienic environment etc.The used
+                            sanitary pad that have not been disposed of properly sometimes block the drainage
+                            system. Incineration is a better technique to dispose of menstrual waste.To incinerate
+                            sanitary napkins, electrical or physical fire based incinerators can be used. Toilet
+                            facilities in India are very poor as they lack bins for the disposal of sanitary pads.As we
+                            are focusing more on rural areas our proposed system focuses on disposing menstrual
+                            waste by burning napkin using solar power based burner, which burns the napkins into
+                            ashes within minutes.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h3 id="cnt">My Contacts</h3>
+            <div class="icons">
+                <div class="icon">
+                    <a class="fa-brands fa-github brands" href="https://github.com/FEBA-19" target="_blank"></a>
+                </div>
+                <div class="icon">
+                    <a class="fa-brands fa-whatsapp brands" href="https://wa.me/918590051704" target="_blank"></a>
+                </div>
+                <div class="icon">
+                    <a class="fa-brands fa-linkedin brands" href="https://www.linkedin.com/in/feba-mathew-405279267/" target="_blank"></a>
+                </div>
+                <div class="icon">
+                    <a class="fa-brands fa-instagram brands" href="https://www.instagram.com/feb_amathew/" target="_blank"></a>
+                </div>
+                <div class="icon">
+                    <a class="fa-brands fa-facebook brands" href="https://www.facebook.com/Feba Mathew" target="_blank"></a>
+                </div>
+                <div class="icon">
+                    <a class="fa-solid fa-envelope brands" href="mailto:febamathew2002@gmail.com" target="_blank"></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer>
+            <p id="copyright">&copy; Feba Mathew Portfolio February 2026, &reg; All Rights Reserved </p>
+        </footer>
+    </div>
+</body>
+
+</html>
