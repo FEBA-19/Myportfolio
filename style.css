@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: relative;
 }
@@ -32,7 +32,7 @@ nav{
     color: blue;
 }
 .home{
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     display: flex;
     justify-content: space-evenly;
@@ -85,6 +85,16 @@ h3{
 }
 html{
     scroll-behavior: smooth;
+}
+#check{
+    display: none;
+}
+.buttons{
+    position: absolute;
+    right: 5%;
+    color: black;
+    font-size: 2.4rem;
+    display: none;
 }
 .about{
     background-image: url('https://img.freepik.com/premium-photo/abstract-background-with-bokeh-effect-blurred-defocused-lights-blue-colors-bokeh-background-blurred-natural-blue-white-bokeh-colorful-glows-sparkle-beautiful-new-year-day_620624-4581.jpg');
@@ -224,4 +234,77 @@ margin-left: 60px;
     font-weight: 600;
     color: black;
     padding-bottom: 20px;
+}
+@media(max-width:760px){
+.buttons{
+    display: block;
+    cursor: pointer;
+}
+#closeicon{
+    display: none;
+}    
+#check:checked~.buttons #menuicon{
+    display: none;
+}
+#check:checked~.buttons #closeicon{
+    display: block;
+}
+
+.navbar{
+    position: absolute;
+    top: 80px;
+    right: 5%;
+    z-index: 3;
+    width: 200px;
+    background-color: rgb(177, 177, 244);
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+}
+#check:checked~.navbar{
+    display: block;
+}
+.list-items{
+    display: block;
+    margin: 20px 0;
+}
+.navbar a{
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1.5rem 0px;
+}
+.container
+{
+    flex-wrap: wrap;
+}
+}
+/* Mobile View */
+@media(max-width:480px){
+/* .home{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+} */
+
+.home-content{
+    margin: 20px 0;
+}
+
+#profile{
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+}
+.home{
+    width: 100%;
+    height: 70vh;
+    background-image: url('https://cdn.vectorstock.com/i/1000v/60/59/blurred-bokeh-light-on-dark-blue-background-vector-23526059.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 }

@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- AOS Link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Box Icons -->
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- Filled Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- Brand Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,11 +37,19 @@
     </script>
     <div class="container">
         <!-- Nav bar -->
-        <nav>
+        <nav class="nav1">
             <!-- Logo -->
             <img class="logo" src="./Images/LOGO (2).png" alt="Logo">
+            <!-- Check Box -->
+            <input type="checkbox" id="check">
+            <label for="check" class="buttons">
+                <!-- Menu Icon -->
+                <i class="bx bx-menu" id="menuicon"></i>
+                <!-- Close Icon -->
+                <i class="bx bx-x" id="closeicon"></i>
+            </label>
             <!--Links  -->
-            <ul>
+            <ul class="navbar">
                 <li class="list-items"> <a class="links" href="#home">HOME</a></li>
                 <li class="list-items"> <a class="links" href="#about">ABOUT</a></li>
                 <li class="list-items"> <a class="links" href="#skills">SKILLS</a></li>
